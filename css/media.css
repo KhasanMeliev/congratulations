@@ -1,0 +1,43 @@
+@media only screen and (max-width: 1050px) {
+    .menu {
+      display: none;
+      position: absolute;
+      background-color: #1f1e28;
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding: 16px 0;
+    }
+    .menu li:hover {
+      display: inline-block;
+      background-color: #51505c;
+      transition: 0.3s ease;
+    }
+    .menu li + li {
+      margin-top: 12px;
+    }
+    #checkbox_toggle:checked ~ .menu {
+      display: block;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width:720px){
+    #congratulations_word{
+      font-size: 20px;
+    }
+    #congratulations_word2{
+      font-size: 20px;
+    }
+    .pic{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  @media only screen and (max-width:400px){
+    #music_box{
+      width: 260px;
+    }
+  }

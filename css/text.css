@@ -1,0 +1,71 @@
+body{
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 50vh; */
+    flex-direction: column;
+}
+.pic{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-image: url("https://www.sololearn.com/Icons/Avatars/23170721.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px 0px;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    font-family: cursive;
+    animation: textAnimation 2s 0s forwards infinite;
+    box-shadow: 0px 0px 10px 10px;
+    text-shadow: 2px 2px 8px #FF0000;
+    margin: 30px 0px;
+}
+@keyframes textAnimation{
+    0%{
+        color: red;
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+        color: yellow;
+    }
+    75%{
+        color: greenyellow;
+    }
+    100%{
+        color: chartreuse;
+    }
+}
+p{
+    width: 80%;
+    color: white;
+    font-size: 25px;
+    font-family: cursive;
+    text-align: center;
+    text-shadow: 2px 2px 8px #FF0000;
+    box-shadow: 0px 0px 5px 5px;
+    animation: textAnimation2 5s 0s forwards infinite;
+    margin: 60px 0px;
+}
+@keyframes textAnimation2{
+    0%{
+        color: red;
+    }
+    25%{
+        color: yellow;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color: chartreuse;
+    }
+    100%{
+        color: greenyellow;
+    }
+}

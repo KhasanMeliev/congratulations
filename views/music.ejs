@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <link rel="stylesheet" href="../css/music.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <%- include('navbar.ejs') %>
+    <div class="music_box" id="music_box">
+      <div class="up">
+        <i class="fa fa-sun-o" onclick="whiteMode()" id="whiteMode"></i>
+        <i
+          class="fa fa-moon-o"
+          style="display: none"
+          onclick="darkMode()"
+          id="darkMode"
+        ></i>
+      </div>
+      <div class="name_pic" id="music1">
+        <div class="pic" id="songPic"></div>
+        <div class="name">
+          <h1 id="songArtist">Gims</h1>
+          <p id="songName">Dans Son Sac</p>
+        </div>
+      </div>
+      <div class="play">
+        <i class="fa fa-backward" onclick="leftMusics()"></i>
+        <i class="fa fa-play" onclick="musicPlay()" id="play_icon"></i>
+        <i
+          class="fa fa-pause"
+          id="pause_icon"
+          style="display: none"
+          onclick="musicPause()"
+        ></i>
+        <i class="fa fa-forward" onclick="rightMusic()"></i>
+      </div>
+    </div>
+  
+  </body>
+  <script src="../js/music.js"></script>
+</html>
